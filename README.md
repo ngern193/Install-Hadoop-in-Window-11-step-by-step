@@ -79,7 +79,7 @@ Hadoop on Linux includes optional Native IO support. However Native IO is mandat
 
 infoThe following repository already pre-built Hadoop Windows native libraries:
 
-https://github.com/ruslanmv/How-to-install-Hadoop-on-Windows/tree/master/winutils/hadoop-3.3.0-YARN-8246/bin
+.........................................................
 
 warning These libraries are not signed and there is no guarantee that it is 100% safe. We use it purely for test&learn purpose.
 
@@ -108,7 +108,7 @@ Now we've downloaded and unpacked all the artefacts we need to configure two imp
 
 First you click the windows button and type environment
 
-![image-20230507121326401](assets/images/posts/README/image-20230507121326401.png)
+...........................
 
 
 
@@ -123,7 +123,7 @@ Variable value:  `C:\Java\jre1.8.0_361`
 
 
 
-![image-20230507121225400](assets/images/posts/README/image-20230507121225400.png)
+..............................
 
 the same with  **HADOOP_HOME** environment variable
 
@@ -132,7 +132,7 @@ Variable value:  `C:\Hadoop\hadoop-3.3.0`
 
 
 
-![image-20230507121111326](assets/images/posts/README/image-20230507121111326.png)
+.................................................
 
 
 
@@ -140,7 +140,7 @@ Variable value:  `C:\Hadoop\hadoop-3.3.0`
 
 Once we finish setting up the above two environment variables, we need to add the bin folders to the PATH environment variable. We click on Edit
 
-![image-20230507121941482](assets/images/posts/README/image-20230507121941482.png)
+................................................
 
 If PATH environment exists in your system, you can also manually add the following two paths to it:
 
@@ -151,7 +151,7 @@ If PATH environment exists in your system, you can also manually add the followi
 
 
 
-![image-20230507122647964](assets/images/posts/README/image-20230507122647964.png)
+..................................................
 
 
 
@@ -195,7 +195,7 @@ winutils.exe
 
 
 
-![image-20230507125319908](assets/images/posts/README/image-20230507125319908.png)
+.............................................................
 
 
 
@@ -296,7 +296,7 @@ Edit file **yarn-site.xml** in %HADOOP_HOME%\etc\hadoop folder.
 
 
 
-![image-20230507133653643](assets/images/posts/README/image-20230507133653643.png)
+......................................................................................
 
 
 
@@ -310,7 +310,7 @@ hdfs namenode -format
 
 The following is an example when it is formatted successfully:
 
-![image-20230507133808803](assets/images/posts/README/image-20230507133808803.png)
+........................................................................................
 
 ### Step 8 - Start HDFS daemons 
 
@@ -322,22 +322,22 @@ Run the following command to start HDFS daemons in Command Prompt:
 
 Please click Allow access to the java.
 
-![image-20230507142854582](assets/images/posts/README/image-20230507142854582.png)
+..........................................................................................
 
 
 
 Two Command Prompt windows will open: one for datanode and another for namenode as the following screenshot shows:
 
-![image-20230507134058063](assets/images/posts/README/image-20230507134058063.png)
+..........................................................................................
 
 Verify HDFS web portal UI through this link: http://localhost:9870/dfshealth.html#tab-overview.
 
 
 You can also navigate to a data node UI:
 
-![image-20230507134126706](assets/images/posts/README/image-20230507134126706.png)
+..........................................................................................
 
-![image-20230507134148506](assets/images/posts/README/image-20230507134148506.png)
+..........................................................................................
 
 ### Step 9 - Start YARN daemons
 
@@ -351,11 +351,11 @@ Run the following command in an elevated Command Prompt window (Run as administr
 
 Similarly two Command Prompt windows will open: one for resource manager and another for node manager as the following screenshot shows:
 
-![](assets/images/posts/README/image-202305071341485061.png)
+..................................................................................
 
 
 You can verify YARN resource manager UI when all services are started successfully. 
 
 http://localhost:8088
 
-![](assets/images/posts/README/image-20230508.jpg)
+...................................................................................
